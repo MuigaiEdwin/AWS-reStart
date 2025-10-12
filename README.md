@@ -72,4 +72,5 @@ aws-restart-journey/
 │
 └── progress.md
 
-You can download it here and upload it directly to your GitHub repository:
+
+

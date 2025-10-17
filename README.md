@@ -259,9 +259,9 @@ aws-restart-journey/
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/brianriant)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/brianriant)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/brianriant)
+[![GitHub](https://github.com/MuigaiEdwin)
+[![LinkedIn](https://www.linkedin.com/in/muigaiedwin/)
+[![Twitter](https://x.com/MuigaiEd
 
 </div>
 

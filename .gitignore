@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# System / OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Optional: ignore JSON data if auto-generated
+# Week_05_Python_Programming/files/insulin.json

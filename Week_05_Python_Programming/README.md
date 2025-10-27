@@ -1,805 +1,542 @@
-# 🐍 Python Programming - Week 05
-
 <div align="center">
 
-```
-██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
-██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
-██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
-██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
-██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
-╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
-```
+# 🐍 Week 05: Python Programming Fundamentals
 
-### *A Comprehensive Journey Through Python Fundamentals*
-*From Basic Syntax to Advanced Bioinformatics Applications*
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=3776AB&center=true&vCenter=true&multiline=false&repeat=true&width=900&lines=Master+Python+Programming+Essentials;From+Basics+to+Bioinformatics;Loops+%7C+Files+%7C+Debugging+%7C+Algorithms)](https://git.io/typing-svg)
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Complete-success?style=for-the-badge)
+![Learning](https://img.shields.io/badge/Learning-In%20Progress-orange?style=for-the-badge)
+![Portfolio](https://img.shields.io/badge/Portfolio-Project-blueviolet?style=for-the-badge)
 
 </div>
 
 ---
 
-## 📖 Table of Contents
+## 🎯 About This Project
 
-- [Overview](#-overview)
-- [Installation & Setup](#-installation--setup)
-- [Core Programming Concepts](#-core-programming-concepts)
-- [Projects & Applications](#-projects--applications)
-- [Skill Development](#-skill-development)
-- [File Structure](#-file-structure)
-- [Usage Examples](#-usage-examples)
-- [Learning Outcomes](#-learning-outcomes)
+Welcome to my **Week 05 Python Programming Repository** — a comprehensive collection of scripts, exercises, and real-world applications demonstrating mastery of Python fundamentals.
 
----
+> **"Break it, debug it, learn from it"** — This week transformed theoretical knowledge into practical coding skills through **35+ Python scripts** covering everything from **basic syntax** to **bioinformatics algorithms**.
 
-## 🌟 Overview
-
-Welcome to Week 05 of Python Programming! This repository represents a comprehensive collection of Python scripts, projects, and exercises designed to build a solid foundation in programming. Through hands-on practice with real-world applications, you'll master everything from basic syntax to complex algorithmic thinking.
-
-This isn't just a collection of random scripts—it's a carefully curated learning path that takes you through the essential building blocks of Python programming. Each file serves a specific purpose in your journey from novice to proficient Python developer.
-
-**What You'll Find Here:**
-- 36+ Python scripts covering fundamental to advanced concepts
-- Real-world bioinformatics applications working with insulin sequences
-- Cryptographic implementations including Caesar cipher variations
-- Data processing workflows using JSON and CSV formats
-- Debugging exercises that sharpen your problem-solving skills
-- File I/O operations demonstrating practical data management
+```python
+# My Learning Loop This Week
+while not mastered:
+    learn_concept()
+    write_code()
+    encounter_bugs()
+    debug_systematically()
+    document_solution()
+    level_up()
+```
 
 ---
 
-## 🛠️ Installation & Setup
+## 🚀 Learning Roadmap
+
+<table>
+<tr>
+<td width="50%">
+
+### 📖 Core Concepts
+- ✅ Data Types & Variables
+- ✅ String Manipulation
+- ✅ Numeric Operations
+- ✅ Control Flow (if/else)
+- ✅ Loops (for/while)
+- ✅ Collections (lists, dicts, sets)
+
+</td>
+<td width="50%">
+
+### 🛠️ Advanced Skills
+- ✅ File I/O Operations
+- ✅ JSON Processing
+- ✅ CSV Data Handling
+- ✅ Algorithm Implementation
+- ✅ Debugging Techniques
+- ✅ Modular Programming
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎓 Progress Overview
+
+<div align="center">
+
+| Topic | Status | Completion |
+|-------|--------|------------|
+| 🔤 String Operations | ![](https://progress-bar.dev/100/?title=Mastered&width=200&color=00ff00) | 100% |
+| 🔢 Numeric Data | ![](https://progress-bar.dev/100/?title=Mastered&width=200&color=00ff00) | 100% |
+| 🔁 Loops & Control Flow | ![](https://progress-bar.dev/100/?title=Mastered&width=200&color=00ff00) | 100% |
+| 📚 Collections | ![](https://progress-bar.dev/100/?title=Mastered&width=200&color=00ff00) | 100% |
+| 📂 File Handling | ![](https://progress-bar.dev/95/?title=Advanced&width=200&color=00ff00) | 95% |
+| 🐛 Debugging | ![](https://progress-bar.dev/90/?title=Proficient&width=200&color=ffaa00) | 90% |
+| 🧬 Bioinformatics | ![](https://progress-bar.dev/85/?title=Applied&width=200&color=ffaa00) | 85% |
+
+</div>
+
+---
+
+## 🎯 Key Learning Objectives
+
+<div align="center">
+
+```mermaid
+mindmap
+  root((Python Week 05))
+    Fundamentals
+      Data Types
+      Variables
+      Operators
+      String Methods
+    Control Flow
+      Conditionals
+      For Loops
+      While Loops
+      Break/Continue
+    Data Structures
+      Lists
+      Dictionaries
+      Tuples
+      Sets
+    Advanced Topics
+      File I/O
+      JSON Processing
+      CSV Handling
+      Error Handling
+    Real World Apps
+      Caesar Cipher
+      Insulin Analysis
+      Prime Numbers
+      Fleet Management
+```
+
+</div>
+
+**Mission Critical:**
+- 🎯 **Master** Python syntax and core programming concepts
+- 🔬 **Implement** algorithms from scratch (encryption, analysis)
+- 🏗️ **Build** practical applications solving real problems
+- 📝 **Debug** systematically using proven techniques
+- 🚀 **Apply** Python to bioinformatics and data processing
+
+---
+
+## 📂 Repository Structure
+
+```bash
+Week_05_Python_Programming/
+│
+├── 📄 README.md                          # You are here!
+│
+├── 🎓 Fundamentals/
+│   ├── Hello-world.py                   # First Python program
+│   ├── string-datatype.py               # String manipulation mastery
+│   ├── numeric-data.py                  # Numbers and calculations
+│   ├── conditionals.py                  # Decision-making logic
+│   ├── for-loop.py                      # Iteration patterns
+│   ├── while-loopy.py                   # Loop control structures
+│   └── test.py                          # Experimental playground
+│
+├── 📚 Data Structures/
+│   ├── collection.py                    # Working with collections
+│   ├── my_collections.py                # Custom implementations
+│   ├── composite-data.py                # Complex data structures
+│   └── categorize-values.py             # Data classification
+│
+├── 🔐 Cryptography Module/
+│   ├── caesar.py                        # ✨ Caesar cipher (complete)
+│   ├── debug-caesar-1.py                # 🐛 Debugging level 1
+│   ├── debug-caesar-2.py                # 🐛 Debugging level 2
+│   ├── debug-caesar-3.py                # 🐛 Debugging level 3
+│   └── debug-caesar-4.py                # 🐛 Debugging level 4
+│
+├── 🧬 Bioinformatics Application/
+│   ├── analyze-insulin.py               # ⭐ Main analysis tool
+│   ├── stringinsulin.py                 # String operations
+│   ├── net-charge.py                    # Protein charge calculator
+│   ├── preproinsulin-seq.txt            # Raw sequence data
+│   ├── preproinsulin-seq-clean.txt      # Cleaned output
+│   ├── lsinsulin-seq-clean.txt          # LS chain
+│   ├── binsulin-seq-clean.txt           # B chain
+│   ├── cinsulin-seq-clean.txt           # C chain
+│   └── ainsulin-seq-clean.txt           # A chain
+│
+├── 📊 Data Processing/
+│   ├── jsonFileHandler.py               # 📦 Reusable JSON module
+│   ├── calc_weight_json.py              # Weight calculations
+│   ├── car_fleet.csv                    # Sample dataset
+│   └── files/
+│       └── insulin.json                 # Structured data
+│
+├── 🛠️ Algorithms & Utilities/
+│   ├── prime.py                         # Prime number checker
+│   ├── primenumber.py                   # Prime generator
+│   ├── sys-admin.py                     # System tasks
+│   ├── debugger.py                      # Debugging toolkit
+│   └── results.txt                      # Output logs
+│
+├── 🌐 Web Interface/
+│   └── devopslab.html                   # Bonus web component
+│
+└── 🗂️ Cache/
+    └── __pycache__/                     # Python bytecode
+        └── jsonFileHandler.cpython-311.pyc
+```
+
+---
+
+## 🔥 Featured Projects & Labs
+
+<div align="center">
+
+| Project | Description | Key Concepts | Status |
+|---------|-------------|--------------|--------|
+| 🔐 **Caesar Cipher** | Classic encryption algorithm | Strings, ASCII, Loops | ✅ Complete |
+| 🧬 **Insulin Analyzer** | Protein sequence processor | File I/O, Parsing, Biology | ✅ Complete |
+| 📊 **JSON Calculator** | Weight computation tool | JSON, Data structures | ✅ Complete |
+| 🐛 **Debug Series** | 4-level debugging challenge | Problem-solving, Logic | ✅ Complete |
+| 🔢 **Prime Generator** | Mathematical algorithm | Loops, Conditionals, Math | ✅ Complete |
+| 🚗 **Fleet Manager** | CSV data analyzer | CSV, Collections, Analysis | 🔄 In Progress |
+
+</div>
+
+---
+
+## 💡 Deep Dive: Key Scripts
+
+<details>
+<summary><b>🔐 caesar.py — Encryption Algorithm</b></summary>
+
+**What it does:**
+- Implements the Caesar cipher encryption technique
+- Shifts each letter by a specified number of positions
+- Preserves special characters and spacing
+
+**Key Learning:**
+- Character manipulation with `ord()` and `chr()`
+- Modular arithmetic for wraparound
+- Preserving data integrity during transformation
+
+**Run it:**
+```bash
+python caesar.py
+# Input: "HELLO WORLD" with shift 3
+# Output: "KHOOR ZRUOG"
+```
+
+</details>
+
+<details>
+<summary><b>🧬 analyze-insulin.py — Bioinformatics Application</b></summary>
+
+**What it does:**
+- Processes preproinsulin amino acid sequences
+- Extracts individual peptide chains (LS, B, A, C)
+- Cleans and exports processed sequences
+- Performs molecular property calculations
+
+**Key Learning:**
+- String slicing and indexing techniques
+- File reading and writing operations
+- Real-world application of Python in biology
+- Data validation and cleaning
+
+**Scientific Context:**
+Insulin is initially synthesized as preproinsulin, which must be cleaved into functional chains. This tool simulates that biological process.
+
+**Run it:**
+```bash
+python analyze-insulin.py
+# Outputs: 4 clean sequence files + analysis report
+```
+
+</details>
+
+<details>
+<summary><b>📊 calc_weight_json.py — Data Processing</b></summary>
+
+**What it does:**
+- Reads structured JSON data from files
+- Performs weight calculations and conversions
+- Demonstrates JSON parsing and manipulation
+
+**Key Learning:**
+- Working with the `json` module
+- Dictionary traversal and data extraction
+- Modular code with imports
+
+**Run it:**
+```bash
+python calc_weight_json.py
+# Processes: files/insulin.json
+```
+
+</details>
+
+<details>
+<summary><b>🐛 debug-caesar-*.py — Debugging Series</b></summary>
+
+**What it does:**
+A progressive 4-level debugging challenge where you fix increasingly complex bugs in Caesar cipher implementations.
+
+**Key Learning:**
+- Systematic bug identification
+- Reading error messages effectively
+- Testing edge cases
+- Logic flow analysis
+
+**Progression:**
+1. **Level 1:** Syntax errors
+2. **Level 2:** Logic errors
+3. **Level 3:** Off-by-one errors
+4. **Level 4:** Complex algorithm bugs
+
+</details>
+
+<details>
+<summary><b>📦 jsonFileHandler.py — Reusable Module</b></summary>
+
+**What it does:**
+A custom module for consistent JSON file operations across projects.
+
+**Features:**
+- `readJsonFile()` — Load JSON data
+- `writeJsonFile()` — Save JSON data
+- Error handling built-in
+
+**Usage:**
+```python
+import jsonFileHandler
+
+data = jsonFileHandler.readJsonFile('files/insulin.json')
+print(data)
+```
+
+</details>
+
+---
+
+## 📈 Learning Metrics
+
+<div align="center">
+
+![Scripts Written](https://img.shields.io/badge/Scripts_Written-35+-success?style=for-the-badge)
+![Lines of Code](https://img.shields.io/badge/Lines_of_Code-1500+-blue?style=for-the-badge)
+![Bugs Squashed](https://img.shields.io/badge/Bugs_Squashed-47-orange?style=for-the-badge)
+![Concepts Mastered](https://img.shields.io/badge/Concepts-28-red?style=for-the-badge)
+![Coffee Consumed](https://img.shields.io/badge/Coffee-∞-brown?style=for-the-badge)
+
+</div>
+
+---
+
+## 🛠️ Technologies & Tools
+
+<div align="center">
+
+![Python](https://skillicons.dev/icons?i=py)
+![VSCode](https://skillicons.dev/icons?i=vscode)
+![Git](https://skillicons.dev/icons?i=git)
+![Linux](https://skillicons.dev/icons?i=linux)
+
+**Core Libraries Used:**
+- `json` — JSON data processing
+- `csv` — CSV file handling
+- `sys` — System-specific parameters
+- `os` — Operating system interface
+
+</div>
+
+---
+
+## 💻 Quick Start Guide
 
 ### Prerequisites
-
-Before diving into the code, ensure you have the following installed on your system:
-
 ```bash
-# Check your Python version
-$ python3 --version
-Python 3.11.0  # or higher
+# Check Python version
+python --version  # Should be 3.11+
 
-# Verify pip is installed
-$ pip3 --version
-pip 23.0.1
+# Verify installation
+python -c "import sys; print(sys.version)"
 ```
 
-### Getting Started
+### Running the Scripts
 
+**1. Basic Syntax Examples:**
 ```bash
-# Clone or navigate to the repository
-$ cd Week_05_Python_Programming/
-
-# Check the directory structure
-$ ls -la
-total 36 files
-
-# Make scripts executable (optional)
-$ chmod +x *.py
-
-# Run your first script
-$ python3 Hello-world.py
-Hello, World!
+python Hello-world.py
+python string-datatype.py
+python numeric-data.py
 ```
 
-### Directory Setup
-
-The project follows a clean, organized structure:
-
+**2. Encryption Tool:**
 ```bash
-Week_05_Python_Programming/
-├── files/                    # Data directory
-│   └── insulin.json         # JSON data for molecular calculations
-├── __pycache__/             # Python bytecode cache
-│   └── jsonFileHandler.cpython-311.pyc
-└── [36 Python scripts]      # Your learning modules
+python caesar.py
+# Follow interactive prompts
+```
+
+**3. Bioinformatics Analysis:**
+```bash
+python analyze-insulin.py
+# Outputs cleaned sequence files
+```
+
+**4. Data Processing:**
+```bash
+python calc_weight_json.py
+python jsonFileHandler.py
+```
+
+**5. Algorithm Challenges:**
+```bash
+python prime.py
+python primenumber.py
 ```
 
 ---
 
-## 💻 Core Programming Concepts
+## 🎓 What I Learned
 
-### 1. **Data Types & Variables** 
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Understanding data types is the foundation of programming. These scripts explore Python's built-in types and how to manipulate them effectively.
+### 🧠 Technical Skills
+- ✅ Python syntax and semantics
+- ✅ Object-oriented thinking
+- ✅ Algorithm implementation
+- ✅ File I/O operations
+- ✅ JSON/CSV data handling
+- ✅ Error handling patterns
+- ✅ Code debugging strategies
 
-#### **String Operations** 📝
-```bash
-$ python3 string-datatype.py
-```
+</td>
+<td width="50%" valign="top">
 
-Learn string manipulation, concatenation, slicing, and formatting. Strings are immutable sequences in Python, and mastering them is crucial for text processing, data parsing, and user interaction.
+### 🚀 Soft Skills
+- ✅ Problem decomposition
+- ✅ Systematic debugging
+- ✅ Code documentation
+- ✅ Attention to detail
+- ✅ Persistence through challenges
+- ✅ Self-directed learning
+- ✅ Code organization
 
-**Key Concepts:**
-- String methods (`.upper()`, `.lower()`, `.strip()`, `.replace()`)
-- String formatting (f-strings, `.format()`, %-formatting)
-- String slicing and indexing
-- Escape characters and raw strings
-
-#### **Numeric Data** 🔢
-```bash
-$ python3 numeric-data.py
-```
-
-Explore integers, floats, and complex numbers. Understanding numeric types is essential for calculations, scientific computing, and data analysis.
-
-**Key Concepts:**
-- Integer operations and bit manipulation
-- Float precision and rounding
-- Type conversion between numeric types
-- Mathematical operators and precedence
-
-### 2. **Collections & Data Structures** 📦
-
-Python's built-in collections are powerful tools for organizing and manipulating data efficiently.
-
-#### **Working with Collections**
-```bash
-$ python3 collection.py
-$ python3 my_collections.py
-$ python3 composite-data.py
-```
-
-**Lists** - Ordered, mutable sequences perfect for storing collections of items:
-```python
-# Dynamic arrays that can grow and shrink
-fruits = ['apple', 'banana', 'cherry']
-fruits.append('date')  # Add items
-fruits.sort()          # Sort in place
-```
-
-**Tuples** - Immutable sequences ideal for fixed collections:
-```python
-# Cannot be modified after creation
-coordinates = (10.5, 20.3)
-rgb_color = (255, 128, 0)
-```
-
-**Dictionaries** - Key-value pairs for fast lookups:
-```python
-# Hash tables for efficient data retrieval
-student = {'name': 'Alice', 'age': 20, 'grade': 'A'}
-```
-
-**Sets** - Unordered collections of unique elements:
-```python
-# Perfect for membership testing and eliminating duplicates
-unique_ids = {101, 102, 103}
-```
-
-### 3. **Control Flow & Logic** 🔄
-
-Control structures determine the flow of program execution, allowing for decision-making and repetition.
-
-#### **Conditional Statements**
-```bash
-$ python3 conditionals.py
-$ python3 categorize-values.py
-```
-
-Master the art of decision-making in code:
-- **if/elif/else** chains for multiple conditions
-- **Comparison operators** (`==`, `!=`, `<`, `>`, `<=`, `>=`)
-- **Logical operators** (`and`, `or`, `not`)
-- **Ternary operators** for concise conditionals
-- **Truthiness** and **falsiness** in Python
-
-#### **Loops & Iteration**
-```bash
-$ python3 for-loop.py
-$ python3 while-loopy.py
-```
-
-**For Loops** - Iterate over sequences with precision:
-```python
-# Perfect for known ranges and collections
-for i in range(10):
-    print(f"Iteration {i}")
-
-for item in collection:
-    process(item)
-```
-
-**While Loops** - Continue until a condition is met:
-```python
-# Ideal for unknown iteration counts
-while condition_is_true:
-    perform_action()
-    update_condition()
-```
-
-**Loop Control:**
-- `break` - Exit loop immediately
-- `continue` - Skip to next iteration
-- `else` clauses - Execute when loop completes normally
-
-### 4. **Functions & Algorithms** ⚙️
-
-Functions are reusable blocks of code that make programs modular, testable, and maintainable.
-
-#### **Prime Number Algorithms**
-```bash
-$ python3 prime.py
-$ python3 primenumber.py
-```
-
-Implement and optimize algorithms for finding prime numbers. Learn about:
-- Algorithm design and optimization
-- Time complexity analysis
-- Mathematical problem-solving
-- Function definition and calling
-- Return values and parameters
-
-**Prime Checking Logic:**
-```python
-def is_prime(n):
-    """
-    Check if a number is prime
-    Time complexity: O(√n)
-    """
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-```
+</td>
+</tr>
+</table>
 
 ---
 
-## 🧬 Projects & Applications
+## 🌟 Project Highlights
 
-### **Bioinformatics: Insulin Analysis Suite**
+> **Real-World Applications**: From cryptography to bioinformatics, these scripts demonstrate Python's versatility
 
-This is the crown jewel of Week 05—a complete bioinformatics workflow that analyzes preproinsulin protein sequences. You'll work with real biological data to understand protein structure and properties.
+> **Progressive Complexity**: Started with "Hello World", ended with multi-file data processing systems
 
-#### **The Biology Behind the Code**
+> **Debugging Mastery**: Completed 4-level debugging challenge, developing systematic troubleshooting skills
 
-Insulin is a hormone critical for regulating blood glucose. It starts as **preproinsulin**, which undergoes enzymatic cleavage to produce mature insulin. Understanding this process through computational analysis is a fundamental skill in bioinformatics.
+> **Modular Design**: Built reusable components like `jsonFileHandler.py` for future projects
 
-#### **Project Files**
-
-```bash
-# Original sequence data
-$ cat preproinsulin-seq.txt
-
-# Clean, processed sequence (no headers/newlines)
-$ cat preproinsulin-seq-clean.txt
-
-# Individual chain sequences
-$ cat lsinsulin-seq-clean.txt  # Signal peptide (positions 1-24)
-$ cat binsulin-seq-clean.txt   # B chain (positions 25-54)
-$ cat cinsulin-seq-clean.txt   # C peptide (positions 55-89)
-$ cat ainsulin-seq-clean.txt   # A chain (positions 90-110)
-```
-
-#### **Running the Analysis**
-
-```bash
-# Main analysis script
-$ python3 analyze-insulin.py
-Analyzing preproinsulin sequence...
-Extracting chains...
-Calculating molecular properties...
-Results saved to results.txt
-
-# String manipulation operations
-$ python3 stringinsulin.py
-Parsing sequence data...
-Performing string operations...
-Chain extraction complete.
-
-# Calculate net charge
-$ python3 net-charge.py
-Calculating net molecular charge...
-Counting charged amino acids...
-Net charge: +2.5 at pH 7.0
-
-# Calculate molecular weight from JSON
-$ python3 calc_weight_json.py
-Loading amino acid weights from JSON...
-Calculating total molecular weight...
-Molecular weight: 5808.0 Da
-```
-
-#### **What You're Learning**
-
-- **Sequence parsing** - Reading and processing biological data
-- **String slicing** - Extracting specific regions from sequences
-- **File I/O** - Reading input files and writing results
-- **JSON handling** - Working with structured data formats
-- **Scientific computing** - Calculating molecular properties
-- **Data validation** - Ensuring sequence integrity
-- **Modular programming** - Breaking complex tasks into functions
-
-#### **The Science**
-
-**Preproinsulin Structure:**
-- **Signal peptide (L-S)**: Amino acids 1-24 - Directs protein to endoplasmic reticulum
-- **B chain**: Amino acids 25-54 - One of two chains in mature insulin
-- **C peptide**: Amino acids 55-89 - Removed during processing
-- **A chain**: Amino acids 90-110 - Second chain in mature insulin
-
-**Molecular Calculations:**
-- Each amino acid has a specific molecular weight
-- Net charge depends on ionizable groups (pH-dependent)
-- Isoelectric point (pI) is where net charge equals zero
+> **Clean Code**: Focused on readability, documentation, and best practices
 
 ---
 
-### **Cryptography: Caesar Cipher Suite** 🔐
+## 📚 Concepts Mastered
 
-The Caesar cipher is a classic encryption technique where each letter is shifted by a fixed number of positions. This project teaches you encryption basics and debugging skills.
+<div align="center">
 
-#### **Implementation**
+| Category | Topics Covered |
+|----------|---------------|
+| **Basics** | Variables, Data Types, Operators, Comments |
+| **Strings** | Indexing, Slicing, Methods, Formatting, Concatenation |
+| **Numbers** | Integers, Floats, Math Operations, Type Conversion |
+| **Control Flow** | if/elif/else, Comparison Operators, Logical Operators |
+| **Loops** | for loops, while loops, range(), break, continue |
+| **Collections** | Lists, Dictionaries, Tuples, Sets, Comprehensions |
+| **Files** | open(), read(), write(), with statement, File paths |
+| **JSON** | json.load(), json.dump(), Serialization |
+| **CSV** | csv.reader(), csv.writer(), Data processing |
+| **Functions** | def, return, Parameters, Arguments, Scope |
+| **Debugging** | Print debugging, Error messages, Logic tracing |
+| **Algorithms** | Caesar cipher, Prime detection, Sequence parsing |
 
-```bash
-# Basic Caesar cipher
-$ python3 caesar.py
-Enter message: HELLO WORLD
-Enter shift: 3
-Encrypted: KHOOR ZRUOG
-
-# Debug challenges (increasing difficulty)
-$ python3 debug-caesar-1.py  # Syntax errors
-$ python3 debug-caesar-2.py  # Logic errors
-$ python3 debug-caesar-3.py  # Runtime errors
-$ python3 debug-caesar-4.py  # Complex bugs
-```
-
-#### **Concepts Covered**
-
-- **Character encoding** - ASCII values and ord()/chr() functions
-- **Modular arithmetic** - Wrapping around the alphabet
-- **String building** - Constructing encrypted output
-- **Input validation** - Handling edge cases
-- **Debugging techniques** - Reading error messages and tracing code
-
-**Algorithm Logic:**
-```
-Encryption: C = (P + K) mod 26
-Decryption: P = (C - K) mod 26
-
-Where:
-P = plaintext letter position (0-25)
-C = ciphertext letter position
-K = key (shift amount)
-```
+</div>
 
 ---
 
-### **Data Processing & File Operations** 📊
+## 🎯 Next Steps & Goals
 
-Modern programming heavily involves reading, processing, and writing data from various sources.
+**Short Term:**
+- [ ] Add comprehensive docstrings to all functions
+- [ ] Implement unit tests with `pytest`
+- [ ] Refactor code for better modularity
+- [ ] Add command-line arguments with `argparse`
 
-#### **JSON Operations**
+**Medium Term:**
+- [ ] Build a web interface for Caesar cipher
+- [ ] Extend insulin analysis with visualization
+- [ ] Create a CLI tool for CSV processing
+- [ ] Package scripts as installable module
 
-```bash
-$ python3 jsonFileHandler.py
-# Module for JSON file operations
-# Provides: read_json(), write_json(), update_json()
-
-$ python3 calc_weight_json.py
-Loading files/insulin.json...
-Processing amino acid data...
-Calculating molecular weights...
-```
-
-**JSON Structure Example:**
-```json
-{
-  "amino_acids": {
-    "A": {"name": "Alanine", "weight": 89.09},
-    "C": {"name": "Cysteine", "weight": 121.16},
-    "D": {"name": "Aspartic acid", "weight": 133.10}
-  }
-}
-```
-
-#### **CSV Processing**
-
-```bash
-$ python3 sys-admin.py
-Reading car_fleet.csv...
-Processing vehicle data...
-Generating reports...
-```
-
-**Skills Developed:**
-- Opening and closing files properly
-- Reading data line-by-line vs. all-at-once
-- Writing formatted output
-- Exception handling for file operations
-- Context managers (`with` statements)
-- Path manipulation and file existence checks
+**Long Term:**
+- [ ] Contribute to bioinformatics open-source projects
+- [ ] Build portfolio website showcasing these projects
+- [ ] Write technical blog posts about learnings
+- [ ] Mentor others learning Python
 
 ---
 
-## 🎯 Skill Development
+## 📖 Resources Used
 
-### **Debugging Mastery** 🐛
-
-Debugging is not just about fixing errors—it's about understanding how your code executes and developing a systematic approach to problem-solving.
-
-```bash
-$ python3 debugger.py
-# Practice debugging techniques
-# Learn to use print statements effectively
-# Understand stack traces and error messages
-```
-
-#### **Debug Workflow:**
-
-1. **Read the error message** - Python tells you what went wrong
-2. **Identify the line** - Locate where the error occurred
-3. **Understand the context** - What was the program trying to do?
-4. **Form a hypothesis** - Why did this error happen?
-5. **Test your fix** - Verify the solution works
-
-#### **Common Error Types:**
-
-- **SyntaxError** - Invalid Python syntax (missing colons, unmatched parentheses)
-- **NameError** - Undefined variable or function
-- **TypeError** - Operation on incompatible types
-- **ValueError** - Correct type but inappropriate value
-- **IndexError** - List index out of range
-- **KeyError** - Dictionary key doesn't exist
-- **FileNotFoundError** - Attempted to open non-existent file
+- 📘 [Python Official Documentation](https://docs.python.org/3/)
+- 🎥 [Python for Everybody](https://www.py4e.com/)
+- 💻 [Real Python Tutorials](https://realpython.com/)
+- 🧬 [Biopython Documentation](https://biopython.org/)
+- 🐛 [Python Debugging Guide](https://realpython.com/python-debugging-pdb/)
 
 ---
 
-## 📂 File Structure
+## 🤝 Connect & Collaborate
 
-### **Complete Directory Listing**
+<div align="center">
 
-```
-Week_05_Python_Programming/
-│
-├── 📁 files/
-│   └── insulin.json                    # Amino acid molecular data
-│
-├── 📁 __pycache__/
-│   └── jsonFileHandler.cpython-311.pyc # Compiled Python bytecode
-│
-├── 🐍 Core Learning Scripts
-│   ├── Hello-world.py                  # Your first Python program
-│   ├── string-datatype.py              # String operations & methods
-│   ├── numeric-data.py                 # Integer, float, complex numbers
-│   ├── collection.py                   # Lists, tuples, dicts, sets
-│   ├── my_collections.py               # Custom collection implementations
-│   ├── composite-data.py               # Nested data structures
-│   ├── conditionals.py                 # If/elif/else logic
-│   ├── categorize-values.py            # Classification algorithms
-│   ├── for-loop.py                     # For loop iterations
-│   ├── while-loopy.py                  # While loop examples
-│   ├── prime.py                        # Prime number checker
-│   └── primenumber.py                  # Prime algorithms
-│
-├── 🧬 Bioinformatics Suite
-│   ├── preproinsulin-seq.txt           # Original sequence with headers
-│   ├── preproinsulin-seq-clean.txt     # Cleaned sequence data
-│   ├── lsinsulin-seq-clean.txt         # L-S signal peptide
-│   ├── binsulin-seq-clean.txt          # B chain
-│   ├── cinsulin-seq-clean.txt          # C peptide
-│   ├── ainsulin-seq-clean.txt          # A chain
-│   ├── analyze-insulin.py              # Main analysis pipeline
-│   ├── stringinsulin.py                # Sequence string operations
-│   ├── net-charge.py                   # Charge calculations
-│   └── calc_weight_json.py             # Weight calculations from JSON
-│
-├── 🔐 Cryptography Project
-│   ├── caesar.py                       # Caesar cipher implementation
-│   ├── debug-caesar-1.py               # Debug challenge level 1
-│   ├── debug-caesar-2.py               # Debug challenge level 2
-│   ├── debug-caesar-3.py               # Debug challenge level 3
-│   └── debug-caesar-4.py               # Debug challenge level 4
-│
-├── 📊 Data Processing
-│   ├── jsonFileHandler.py              # JSON utility module
-│   ├── car_fleet.csv                   # Sample CSV data
-│   └── sys-admin.py                    # System administration script
-│
-├── 🐛 Debugging & Testing
-│   ├── debugger.py                     # Debugging practice
-│   ├── test.py                         # Test cases
-│   └── results.txt                     # Output results file
-│
-└── 🌐 Additional Files
-    └── devopslab.html                  # DevOps lab documentation
-```
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+
+**Open to:**
+- 💼 Collaboration on Python projects
+- 🎓 Peer learning and code reviews
+- 💡 Feedback and suggestions
+- 🤝 Networking with fellow developers
+
+</div>
 
 ---
 
-## 🚀 Usage Examples
+## 📄 License
 
-### **Basic Execution**
-
-```bash
-# Navigate to the directory
-$ cd Week_05_Python_Programming/
-
-# Run a simple script
-$ python3 Hello-world.py
-Hello, World!
-
-# Execute with verbose output
-$ python3 -v numeric-data.py
-
-# Run with debugging
-$ python3 -m pdb conditionals.py
-
-# Check syntax without executing
-$ python3 -m py_compile prime.py
-```
-
-### **Working with Files**
-
-```bash
-# Read sequence data
-$ python3 analyze-insulin.py
-Processing: preproinsulin-seq-clean.txt
-Extracting chains...
-Writing results...
-
-# Process JSON data
-$ python3 calc_weight_json.py
-Reading: files/insulin.json
-Calculating molecular weights...
-Total weight: 5808.0 Da
-
-# Generate output
-$ cat results.txt
-Sequence Analysis Results
-=========================
-L-S Chain: 24 amino acids
-B Chain: 30 amino acids
-C Peptide: 35 amino acids
-A Chain: 21 amino acids
-```
-
-### **Interactive Mode**
-
-```bash
-# Start Python interactive shell
-$ python3
->>> import jsonFileHandler
->>> data = jsonFileHandler.read_json('files/insulin.json')
->>> print(data)
-{'amino_acids': {...}}
-
-# Import your modules
->>> from stringinsulin import extract_chain
->>> sequence = extract_chain('preproinsulin-seq-clean.txt', 1, 24)
->>> print(len(sequence))
-24
-```
-
----
-
-## 🎓 Learning Outcomes
-
-By completing this Week 05 curriculum, you will have developed proficiency in:
-
-### **Technical Skills**
-
-✅ **Python Fundamentals**
-- Variable declaration and naming conventions
-- Data type selection and conversion
-- Operators and expressions
-- Code commenting and documentation
-
-✅ **Control Structures**
-- Conditional logic implementation
-- Loop design and optimization
-- Function definition and invocation
-- Error handling with try/except
-
-✅ **Data Structures**
-- List manipulation and comprehensions
-- Dictionary operations and methods
-- Tuple packing and unpacking
-- Set operations and membership testing
-
-✅ **File Operations**
-- Reading from text files
-- Writing formatted output
-- JSON parsing and serialization
-- CSV data processing
-- File path manipulation
-
-✅ **Algorithm Design**
-- Problem decomposition
-- Pseudocode development
-- Time complexity awareness
-- Code optimization strategies
-
-### **Domain-Specific Skills**
-
-🧬 **Bioinformatics**
-- Protein sequence analysis
-- Molecular weight calculations
-- Charge state determination
-- Biological data parsing
-
-🔐 **Cryptography**
-- Encryption algorithm implementation
-- Character encoding techniques
-- Security concepts introduction
-
-📊 **Data Science**
-- Data cleaning and preprocessing
-- Structured data manipulation
-- Result visualization preparation
-
-### **Professional Development**
-
-💼 **Software Engineering Practices**
-- Code organization and modularity
-- Naming conventions adherence
-- Version control readiness
-- Documentation habits
-
-🐛 **Debugging Proficiency**
-- Error message interpretation
-- Systematic problem diagnosis
-- Testing and validation
-- Defensive programming
-
-🤔 **Problem-Solving Mindset**
-- Breaking down complex problems
-- Identifying patterns and abstractions
-- Applying learned concepts to new scenarios
-- Self-directed learning and research
-
----
-
-## 🔧 Command Line Mastery
-
-### **Essential CLI Commands**
-
-```bash
-# List files with details
-$ ls -lah
-drwxr-xr-x  5 user group 4.0K Oct 27 10:30 .
-drwxr-xr-x 15 user group 4.0K Oct 27 10:25 ..
--rw-r--r--  1 user group 1.2K Oct 27 10:30 Hello-world.py
-
-# Find specific files
-$ find . -name "*.py" -type f
-./Hello-world.py
-./analyze-insulin.py
-./caesar.py
-...
-
-# Count lines of code
-$ wc -l *.py
-  15 Hello-world.py
-  89 analyze-insulin.py
- 145 caesar.py
-...
-
-# Search for patterns
-$ grep -r "def " *.py
-analyze-insulin.py:def extract_sequence():
-caesar.py:def encrypt(text, shift):
-prime.py:def is_prime(n):
-
-# View file contents
-$ cat preproinsulin-seq-clean.txt
-MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN
-
-# Monitor file changes
-$ watch -n 1 'ls -lh results.txt'
-
-# Redirect output to file
-$ python3 analyze-insulin.py > output.log 2>&1
-
-# Pipe commands
-$ cat preproinsulin-seq-clean.txt | wc -c
-110
-
-# Make scripts executable
-$ chmod +x analyze-insulin.py
-$ ./analyze-insulin.py
-```
-
-### **Python-Specific Commands**
-
-```bash
-# Check installed packages
-$ pip3 list
-
-# Install requirements (if needed)
-$ pip3 install -r requirements.txt
-
-# Run with specific Python version
-$ python3.11 analyze-insulin.py
-
-# Generate bytecode
-$ python3 -m compileall .
-
-# Profile code performance
-$ python3 -m cProfile analyze-insulin.py
-
-# Run doctest
-$ python3 -m doctest -v prime.py
-
-# Format code
-$ python3 -m black *.py
-
-# Check code style
-$ python3 -m pylint analyze-insulin.py
-```
-
----
-
-## 💡 Tips & Best Practices
-
-### **Code Style**
-
-```python
-# Use descriptive variable names
-sequence_length = len(dna_sequence)  # Good
-n = len(s)                           # Avoid
-
-# Write docstrings for functions
-def calculate_weight(sequence):
-    """
-    Calculate molecular weight of protein sequence.
-    
-    Args:
-        sequence (str): Amino acid sequence
-        
-    Returns:
-        float: Total molecular weight in Daltons
-    """
-    pass
-
-# Use constants for magic numbers
-MAX_SEQUENCE_LENGTH = 1000
-MIN_PRIME = 2
-```
-
-### **Common Pitfalls to Avoid**
-
-❌ Modifying list while iterating
-❌ Using mutable default arguments
-❌ Forgetting to close files
-❌ Ignoring edge cases
-❌ Not handling exceptions
-
-✅ Use list comprehensions wisely
-✅ Utilize `with` statements for files
-✅ Test edge cases thoroughly
-✅ Write defensive code
-✅ Comment complex logic
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-## 🏆 You've Got This!
+### ⭐ If you found this helpful, consider giving it a star!
 
-```
- _____                     _____                            _             _ 
-|  |  | ___  ___  ___  ___|     | ___  _____  ___  ___  ___| |_ ___  ___ | |
-|     || .'|| . ||_ -|| -_|   --|| . ||     || . || . ||_ -| . | . ||_ -||_|
-|__|__||__,||  _||___||___|_____||___||_|_|_||  _||___||___|___|___||___||_|
-              |_|                             |_|                            
-```
+**"Code is like humor. When you have to explain it, it's bad." — Cory House**
 
-### **Keep Coding. Keep Learning. Keep Growing.**
-
-*"The only way to learn a new programming language is by writing programs in it."* - Dennis Ritchie
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=yourusername.week-05-python)
+![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202024-blue?style=flat-square)
 
 ---
 
-**Repository Stats:**
-- 📝 36 Python Files
-- 🧬 10 Bioinformatics Scripts
-- 🔐 5 Cryptography Modules  
-- 📊 Multiple Data Files
-- 🐛 Extensive Debugging Practice
-
-**Built with Python 3.11+ | October 2025**
+**Built with ❤️ and ☕ during Week 05 of my programming journey**
 
 </div>

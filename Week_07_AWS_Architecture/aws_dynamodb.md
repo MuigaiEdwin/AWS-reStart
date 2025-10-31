@@ -521,7 +521,7 @@ Capture table modifications for:
 
 ## 👨‍💻 Author
 
-**Your Name**  
+**$cripted**  
 Date: November 1, 2025  
 Course: AWS Cloud Computing / Database Management  
 

@@ -4,7 +4,11 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=1000&color=FF9900&center=true&vCenter=true&multiline=false&repeat=true&width=800&lines=Breaking+and+Learning+Cloud+Technologies;From+Linux+to+AWS+Solutions+Architect;Daily+Documentation+%7C+Hands-on+Labs;Python+%7C+DevOps+%7C+Cloud+Native)](https://git.io/typing-svg)
 
-  ![AWS re/Start Program](https://d2908q01vomqb2.cloudfront.net/9109c85a45b703f87f1413a405549a2cea9ab556/2020/05/28/social-image_restart_v2.png)
+  <div align="center">
+  <a href="https://aws.amazon.com/blogs/training-and-certification/tag/cloud-careers/" target="_blank">
+    <img src="https://d2908q01vomqb2.cloudfront.net/9109c85a45b703f87f1413a405549a2cea9ab556/2020/05/28/social-image_restart_v2.png" alt="AWS re/Start Program" width="100%" height="200" style="max-width: 1200px; object-fit: cover; border-radius: 10px; margin: 20px 0;">
+  </a>
+</div>
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)

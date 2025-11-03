@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOps Labs — Interactive Presentation</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <style>
+    :root {
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --accent-purple: #7c3aed;
+      --accent-indigo: #4f46e5;
+      --accent-blue: #3b82f6;
+      --text-primary: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --glass: rgba(255, 255, 255, 0.05);
+      --glass-border: rgba(255, 255, 255, 0.1);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --radius: 16px;
+      --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Animated Background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(79, 70, 229, 0.08) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-md);
+      animation: fadeInDown 0.6s ease-out;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-indigo));
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .header-text h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-text p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-indigo));
+      color: white;
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(124, 58, 237, 0.4);
+    }
+
+    .btn-secondary {
+      background: var(--glass);
+      color: var(--text-primary);
+      border: 1px solid var(--glass-border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-tertiary);
+      transform: translateY(-2px);
+    }
+
+    /* Tab Navigation */
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .tab {
+      padding: 0.75rem 1.5rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 50px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+
+    .tab:hover {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+    }
+
+    .tab.active {
+      background: linear-gradient(135deg, var(--accent-purple), var(--accent-indigo));
+      color: white;
+      border-color: transparent;
+      box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    }
+
+    /* Progress Bar */
+    .progress-bar {
+      height: 4px;
+      background: var(--glass);
+      border-radius: 2px;
+      margin-top: 1.5rem;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+      transition: width 0.3s ease;
+      width: 33.33%;
+    }
+
+    /* ========================
+       Main Content Layout
+       ======================== */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    /* Lab Content Cards */
+    .lab-content {
+      display: none;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .lab-content.active {
+      display: block;
+    }
+
+    .card {
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      margin: 1.5rem 0 0.75rem;
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+    }
+
+    .card strong {
+      color: var(--text-primary);
+    }
+
+    /* Tool Grid */
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .tool-item {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(79, 70, 229, 0.05));
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .tool-item:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(79, 70, 229, 0.1));
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.2);
+    }
+
+    .tool-item i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent-purple);
+    }
+
+    /* Diagram Boxes */
+    .diagram {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .diagram-box {
+      flex: 1;
+      min-width: 180px;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .diagram-box:hover {
+      transform: scale(1.05);
+      background: var(--bg-tertiary);
+    }
+
+    .diagram-box i {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .diagram-box.automation {
+      border-left: 4px solid var(--success);
+    }
+
+    .diagram-box.orchestration {
+      border-left: 4px solid var(--warning);
+    }
+
+    /* Lists */
+    .benefit-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefit-list li {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: rgba(16, 185, 129, 0.1);
+      border-left: 3px solid var(--success);
+      border-radius: 8px;
+      color: var(--text-secondary);
+    }
+
+    .benefit-list li::before {
+      content: '✓';
+      color: var(--success);
+      font-weight: bold;
+      margin-right: 0.75rem;
+    }
+
+    .challenge-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .challenge-list li {
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: rgba(245, 158, 11, 0.1);
+      border-left: 3px solid var(--warning);
+      border-radius: 8px;
+      color: var(--text-secondary);
+    }
+
+    .challenge-list li::before {
+      content: '⚠';
+      color: var(--warning);
+      margin-right: 0.75rem;
+    }
+
+    /* ========================
+       Sidebar
+       ======================== */
+    .sidebar {
+      position: sticky;
+      top: 2rem;
+    }
+
+    .sidebar .card {
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .pill {
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(79, 70, 229, 0.1));
+      border: 1px solid var(--glass-border);
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Resources Links */
+    .resources-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .resources-list li {
+      margin: 0.75rem 0;
+    }
+
+    .resources-list a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 10px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .resources-list a:hover {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      transform: translateX(5px);
+    }
+
+    .resources-list a i {
+      color: var(--accent-purple);
+    }
+
+    /* ========================
+       Footer
+       ======================== */
+    footer {
+      margin-top: 3rem;
+      padding: 2rem;
+      text-align: center;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius);
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent-purple);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      color: var(--accent-blue);
+    }
+
+    /* ========================
+       Animations
+       ======================== */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* ========================
+       Responsive Design
+       ======================== */
+    @media (max-width: 992px) {
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-actions {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .tabs {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      .header-text h1 {
+        font-size: 1.5rem;
+      }
+
+      .card {
+        padding: 1.5rem;
+      }
+
+      .tool-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      }
+
+      .diagram {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="header-content">
+        <div class="logo-section">
+          <div class="logo">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="header-text">
+            <h1>DevOps Labs Overview</h1>
+            <p>Automation • Orchestration • CI/CD • Tools Research</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-secondary" onclick="window.open('https://github.com/MuigaiEdwin', '_blank')">
+            <i class="fab fa-github"></i> View on GitHub
+        </button>
+          <button class="btn btn-primary">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+      
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" onclick="switchLab(1)">
+          <i class="fas fa-tools"></i> Lab 1: DevOps Tools
+        </button>
+        <button class="tab" onclick="switchLab(2)">
+          <i class="fas fa-cog"></i> Lab 2: Automation Types
+        </button>
+        <button class="tab" onclick="switchLab(3)">
+          <i class="fas fa-sync-alt"></i> Lab 3: Automation vs Orchestration
+        </button>
+      </div>
+      
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-grid">
+      <!-- Left Column: Lab Content -->
+      <div>
+        <!-- Lab 1 -->
+        <div class="lab-content active" id="lab1">
+          <div class="card">
+            <h2><i class="fas fa-wrench"></i> Lab 1: DevOps Tools Research</h2>
+            <p><strong>Overview:</strong> Essential DevOps tool categories, their importance, and industry-standard tools used in modern workflows.</p>
+            
+            <div class="diagram">
+              <div class="diagram-box">
+                <i class="fas fa-chart-line" style="color: var(--accent-blue);"></i>
+                <strong>Monitoring</strong>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Nagios • Prometheus • Grafana</p>
+              </div>
+              <div class="diagram-box">
+                <i class="fas fa-bolt" style="color: var(--accent-purple);"></i>
+                <strong>Build & CI</strong>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Jenkins • GitHub Actions</p>
+              </div>
+              <div class="diagram-box">
+                <i class="fas fa-rocket" style="color: var(--success);"></i>
+                <strong>Deploy</strong>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">AWS CodeDeploy • Kubernetes</p>
+              </div>
+            </div>
+
+            <h3><i class="fas fa-robot"></i> Jenkins - CI/CD Automation</h3>
+            <p><strong>What it does:</strong> Automates building, testing, and deploying code through pipelines.</p>
+            <ul class="benefit-list">
+              <li>Auto-build and test on code commits</li>
+              <li>Deploy applications automatically</li>
+              <li>Run tests across multiple platforms</li>
+              <li>Schedule automated tasks and workflows</li>
+            </ul>
+
+            <h3><i class="fas fa-cloud"></i> AWS CodeDeploy - Deployment Service</h3>
+            <p><strong>What it does:</strong> Automates deployments to EC2, Lambda, and on-premises servers.</p>
+            <ul class="benefit-list">
+              <li>Zero-downtime deployments (blue/green)</li>
+              <li>Multi-region deployments</li>
+              <li>Lambda function updates with traffic shifting</li>
+              <li>Hybrid cloud deployments</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lab 2 -->
+        <div class="lab-content" id="lab2">
+          <div class="card">
+            <h2><i class="fas fa-building"></i> Lab 2: Automation Types</h2>
+            <p><strong>Think like an engineer:</strong> Break work into Build, Test, Deploy stages and automate each.</p>
+
+            <h3><i class="fas fa-hammer"></i> Build Automation</h3>
+            <div class="tool-grid">
+              <div class="tool-item">
+                <i class="fas fa-box"></i>
+                <div>Maven</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-bolt"></i>
+                <div>Gradle</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-robot"></i>
+                <div>Jenkins</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-bug"></i>
+                <div>Ant</div>
+              </div>
+            </div>
+
+            <p><strong>Benefits:</strong></p>
+            <ul class="benefit-list">
+              <li>Consistency and eliminates human errors</li>
+              <li>Faster compilation and builds</li>
+              <li>Early issue detection</li>
+              <li>Increased developer productivity</li>
+            </ul>
+
+            <p><strong>Challenges:</strong></p>
+            <ul class="challenge-list">
+              <li>Complex initial setup</li>
+              <li>Learning curve for teams</li>
+              <li>Ongoing maintenance required</li>
+              <li>Debugging build failures</li>
+            </ul>
+
+            <h3><i class="fas fa-flask"></i> Test Automation</h3>
+            <div class="tool-grid">
+              <div class="tool-item">
+                <i class="fas fa-globe"></i>
+                <div>Selenium</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-coffee"></i>
+                <div>JUnit</div>
+              </div>
+              <div class="tool-item">
+                <i class="fab fa-python"></i>
+                <div>Pytest</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-tree"></i>
+                <div>Cypress</div>
+              </div>
+            </div>
+
+            <p><strong>Benefits:</strong></p>
+            <ul class="benefit-list">
+              <li>Faster test execution</li>
+              <li>Consistent and repeatable results</li>
+              <li>Early bug detection</li>
+              <li>Increased test coverage</li>
+            </ul>
+
+            <p><strong>Challenges:</strong></p>
+            <ul class="challenge-list">
+              <li>High initial investment</li>
+              <li>Requires scripting skills</li>
+              <li>Test maintenance overhead</li>
+              <li>Dealing with flaky tests</li>
+            </ul>
+
+            <h3><i class="fas fa-rocket"></i> Deployment Automation</h3>
+            <div class="tool-grid">
+              <div class="tool-item">
+                <i class="fab fa-aws"></i>
+                <div>AWS CodeDeploy</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-scroll"></i>
+                <div>Ansible</div>
+              </div>
+              <div class="tool-item">
+                <i class="fab fa-docker"></i>
+                <div>Docker</div>
+              </div>
+              <div class="tool-item">
+                <i class="fas fa-dharmachakra"></i>
+                <div>Kubernetes</div>
+              </div>
+            </div>
+
+            <p><strong>Benefits:</strong></p>
+            <ul class="benefit-list">
+              <li>Faster and more frequent releases</li>
+              <li>Reduced deployment errors</li>
+              <li>Quick rollback capabilities</li>
+              <li>Reduced downtime</li>
+            </ul>
+
+            <p><strong>Challenges:</strong></p>
+            <ul class="challenge-list">
+              <li>Complex environment setup</li>
+              <li>Security and access control</li>
+              <li>Infrastructure investment</li>
+              <li>Team training requirements</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Lab 3 -->
+        <div class="lab-content" id="lab3">
+          <div class="card">
+            <h2><i class="fas fa-sync-alt"></i> Lab 3: Automation vs Orchestration</h2>
+            <p><strong>Think like a programmer:</strong> Automation = one function; Orchestration = coordinated workflow.</p>
+
+            <div class="diagram">
+              <div class="diagram-box automation">
+                <i class="fas fa-bolt" style="color: var(--success);"></i>
+                <strong>Automation</strong>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Single tasks (scripts, functions)</p>
+                <code style="display: block; margin-top: 0.5rem; color: var(--text-muted); font-size: 0.8rem;">def backup():<br>&nbsp;&nbsp;...</code>
+              </div>
+              <div class="diagram-box orchestration">
+                <i class="fas fa-project-diagram" style="color: var(--warning);"></i>
+                <strong>Orchestration</strong>
+                <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Multiple tasks coordinated</p>
+                <code style="display: block; margin-top: 0.5rem; color: var(--text-muted); font-size: 0.8rem;">workflow.execute()</code>
+              </div>
+            </div>
+
+            <h3><i class="fas fa-key"></i> Key Differences</h3>
+            <p><strong>Automation:</strong> Automates a single repeatable task</p>
+            <ul class="benefit-list">
+              <li>Python scripts</li>
+              <li>Unit tests</li>
+              <li>Cron jobs</li>
+              <li>User-defined functions</li>
+            </ul>
+
+            <p><strong>Orchestration:</strong> Coordinates multiple automated tasks into workflows</p>
+            <ul class="benefit-list">
+              <li>Terraform - Infrastructure provisioning</li>
+              <li>Kubernetes - Container orchestration</li>
+              <li>Workflow engines</li>
+              <li>Process coordination</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h2><i class="fas fa-lightbulb"></i> Key Takeaways</h2>
+            <ul class="benefit-list">
+              <li><strong>Value of Automation:</strong> Speeds delivery, reduces errors, increases consistency</li>
+              <li><strong>Not Everything Should Be Automated:</strong> Some tasks require human judgment or creativity</li>
+              <li><strong>Start Small:</strong> Automate repetitive tasks first, then orchestrate workflows</li>
+              <li><strong>Engineer Mindset:</strong> Break problems into functions (automation) then compose into systems (orchestration)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Sidebar -->
+      <aside class="sidebar">
+        <div class="card">
+          <h3><i class="fas fa-info-circle"></i> Quick Summary</h3>
+          <p style="color: var(--text-secondary);">Interactive DevOps notes and comparisons. Use tabs to switch between labs.</p>
+          
+          <div class="summary-pills">
+            <span class="pill"><i class="fas fa-robot"></i> Jenkins</span>
+            <span class="pill"><i class="fas fa-mountain"></i> Terraform</span>
+            <span class="pill"><i class="fas fa-dharmachakra"></i> Kubernetes</span>
+            <span class="pill"><i class="fab fa-docker"></i> Docker</span>
+            <span class="pill"><i class="fab fa-aws"></i> AWS</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-book"></i> Learn More - Resources</h3>
+          <ul class="resources-list">
+            <li>
+              <a href="https://docs.aws.amazon.com/codedeploy/" target="_blank" rel="noopener">
+                <i class="fab fa-aws"></i>
+                <span>AWS CodeDeploy Docs</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.jenkins.io/doc/book/pipeline/" target="_blank" rel="noopener">
+                <i class="fas fa-robot"></i>
+                <span>Jenkins Pipeline Guide</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://kubernetes.io/docs/home/" target="_blank" rel="noopener">
+                <i class="fas fa-dharmachakra"></i>
+                <span>Kubernetes Official Docs</span>
+              </a>
+            </li>
+            </li>
+            <li>
+              <a href="https://docs.ansible.com/" target="_blank" rel="noopener">
+                <i class="fas fa-scroll"></i>
+                <span>Ansible Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://grafana.com/docs/" target="_blank" rel="noopener">
+                <i class="fas fa-chart-line"></i>
+                <span>Grafana - Observability</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        <i class="fas fa-code"></i> Created by <a href="#">Edwin Muigai</a> — DevOps Labs 2025
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.875rem;">
+        <i class="fas fa-heart" style="color: #f43f5e;"></i> Built with modern web technologies
+      </p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Tab Switching Logic
+    function switchLab(labNumber) {
+      document.querySelectorAll('.lab-content').forEach(lab => lab.classList.remove('active'));
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      
+      document.getElementById('lab' + labNumber).classList.add('active');
+      document.querySelectorAll('.tab')[labNumber - 1].classList.add('active');
+      
+      const progressFill = document.getElementById('progressFill');
+      progressFill.style.width = ((labNumber / 3) * 100) + '%';
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Entrance animations observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.style.animation = 'fadeIn 0.6s ease-out forwards';
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
+
+    document.querySelectorAll('.card').forEach(card => observer.observe(card));
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        const tabs = document.querySelectorAll('.tab');
+        const currentIndex = Array.from(tabs).findIndex(tab => tab.classList.contains('active'));
+        const newIndex = e.key === 'ArrowLeft' 
+          ? (currentIndex > 0 ? currentIndex - 1 : tabs.length - 1)
+          : (currentIndex < tabs.length - 1 ? currentIndex + 1 : 0);
+        switchLab(newIndex + 1);
+      }
+    });
+
+    // Console message
+    console.log('%c🚀 DevOps Labs Presentation', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+    console.log('%cBuilt with ❤️ by Edwin Muigai', 'font-size: 14px; color: #94a3b8;');
+    console.log('%c← → Arrow keys to navigate labs', 'font-size: 12px; color: #cbd5e1;');
+  </script>
+</body>
+</html>

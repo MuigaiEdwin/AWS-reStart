@@ -1,0 +1,3 @@
+✔️ Learning the EC2 instance Launch
+complete all the pending KCs and labs
+Attend the group discussion from 8pm for Lynx and Nova discussion

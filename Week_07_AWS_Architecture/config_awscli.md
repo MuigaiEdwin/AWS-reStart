@@ -200,4 +200,27 @@ cat lab_policy.json
 ├── README.md                 # This file
 ├── lab_policy.json          # Retrieved IAM policy document
 └── screenshots/             # Lab screenshots (optional)
-    ├── ssh
+    ├── ssh-connection.png
+    ├── aws-cli-install.png
+    └── policy-retrieval.png
+⚠️ Important Notes
+
+🚫 Do not change the lab Region unless instructed
+🔒 Never commit AWS credentials to version control
+⏱️ Lab environment has a time limit
+💾 Secret access keys are only shown once at creation
+
+✅ Lab Completion Checklist
+
+ SSH connection established
+ AWS CLI installed and verified
+ AWS CLI configured with credentials
+ IAM user list retrieved successfully
+ lab_policy.json downloaded via CLI
+
+🎓 Author
+Lab completed as part of AWS CLI training curriculum.
+📄 License
+This lab is for educational purposes only.
+
+Lab Status: ✅ Complete

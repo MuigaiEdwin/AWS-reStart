@@ -162,6 +162,127 @@ aws iam get-policy-version \
   > lab_policy.json
 ```
 
+```bash
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "cloudformation:List*",
+                "cloudformation:Describe*",
+                "cloudformation:Detect*",
+                "cloudformation:EstimateTemplateCost",
+                "cloudformation:Get*",
+                "cloudwatch:*",
+                "ec2:*Address*",
+                "ec2:*associate*",
+                "ec2:AttachVolume",
+                "ec2:BundleInstance",
+                "ec2:Cancel*",
+                "ec2:*Capacity*",
+                "ec2:CreateInstanceExportTask",
+                "ec2:CreateFlowLogs",
+                "ec2:*Credit*",
+                "ec2:*Cidr",
+                "ec2:Delete*",
+                "ec2:Describe*",
+                "ec2:DetachVolume",
+                "ec2:*Dhcp*",
+                "ec2:*Ebs*",
+                "ec2:*Event*",
+                "ec2:*Fleet*",
+                "ec2:*Format",
+                "ec2:*Gateway*",
+                "ec2:Get*",
+                "ec2:*InstanceAttribute",
+                "ec2:*InternetGateway",
+                "ec2:*Image*",
+                "ec2:*KeyPair",
+                "ec2:*Kms*",
+                "ec2:*monitor*",
+                "ec2:*Network*",
+                "ec2:*Options",
+                "ec2:*PrefixList*",
+                "ec2:ReportInstanceStatus",
+                "ec2:RebootInstances",
+                "ec2:ReplaceIamInstanceProfileAssociation",
+                "ec2:*Route*",
+                "ec2:*SecurityGroup*",
+                "ec2:Search*",
+                "ec2:SendDiagnosticInterrupt",
+                "ec2:StopInstances",
+                "ec2:*Snapshot*",
+                "ec2:*Subnet*",
+                "ec2:*Tag*",
+                "ec2:TerminateInstances",
+                "ec2:*Traffic*",
+                "ec2:*Vpn*",
+                "ec2:*Vpc*",
+                "events:*",
+                "iam:List*",
+                "iam:Get*",
+                "kms:List*",
+                "kms:Describe*",
+                "logs:*",
+                "resource-groups:Get*",
+                "resource-groups:List*",
+                "resource-groups:SearchResources",
+                "ssm:List*",
+                "ssm:Describe*",
+                "ssm:Get*",
+                "ssm:PutInventory",
+                "ssm:PutComplianceItems",
+                "ssm:PutConfigurePackageResult",
+                "ssm:UpdateAssociationStatus",
+                "ssm:UpdateInstanceAssociationStatus",
+                "ssm:UpdateInstanceInformation",
+                "ssm:CancelCommand",
+                "ssm:SendCommand",
+                "ssm:StartAutomationExecution",
+                "ssm:StartSession",
+                "ssm:TerminateSession",
+                "ssm:ResumeSession",
+                "ssm:DescribeSessions",
+                "ssm:GetConnectionStatus",
+                "sns:CreateTopic",
+                "sns:DeleteTopic",
+                "sns:AddPermission",
+                "sns:RemovePermission",
+                "sns:Publish",
+                "sns:Subscribe",
+                "sns:Unsubscribe",
+                "sns:ConfirmSubscription",
+                "sns:Get*",
+                "sns:Set*",
+                "sns:List*",
+                "tag:*"
+            ],
+            "Resource": "*",
+            "Effect": "Allow",
+            "Sid": "AllowAllActions"
+        },
+        {
+            "Action": [
+                "ec2:*Fpga*",
+                "ec2:*Purchase*",
+                "ec2:*ReservedInstances*",
+                "ec2:*Scheduled*",
+                "ec2:*Spot*",
+                "ec2:AcceptVpcEndpointConnections",
+                "ec2:AttachVpnGateway",
+                "ec2:CreateCapacityReservation",
+                "ec2:CreateVpnGateway",
+                "ec2:EnableFastSnapshotRestores"
+            ],
+            "Resource": "*",
+            "Effect": "Deny",
+            "Sid": "RestrictActions"
+        }
+    ]
+} 
+```
+
+
 ### Step 3: Verify the File
 ```bash
 cat lab_policy.json
@@ -203,14 +324,17 @@ cat lab_policy.json
     ├── ssh-connection.png
     ├── aws-cli-install.png
     └── policy-retrieval.png
-⚠️ Important Notes
+ ```   
+
+
+## ⚠️ Important Notes
 
 🚫 Do not change the lab Region unless instructed
 🔒 Never commit AWS credentials to version control
 ⏱️ Lab environment has a time limit
 💾 Secret access keys are only shown once at creation
 
-✅ Lab Completion Checklist
+## ✅ Lab Completion Checklist
 
  SSH connection established
  AWS CLI installed and verified
@@ -218,9 +342,9 @@ cat lab_policy.json
  IAM user list retrieved successfully
  lab_policy.json downloaded via CLI
 
-🎓 Author
+##  🎓 Author
 Lab completed as part of AWS CLI training curriculum.
 📄 License
 This lab is for educational purposes only.
 
-Lab Status: ✅ Complete
+## Lab Status: ✅ Complete

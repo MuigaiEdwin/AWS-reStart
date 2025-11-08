@@ -288,27 +288,6 @@ aws-rds-lab/
 
 ---
 
-## Git Commands for Submission
-
-```bash
-# Initialize repository
-git init
-
-# Add all files
-git add .
-
-# Commit changes
-git commit -m "Complete AWS RDS Lab - Database creation and SQL operations"
-
-# Add remote repository
-git remote add origin https://github.com/yourusername/aws-rds-lab.git
-
-# Push to GitHub
-git branch -M main
-git push -u origin main
-```
-
----
 
 ## Key Learning Outcomes
 

@@ -132,13 +132,11 @@ http://<PUBLIC_IPV4>/projects.html
 
 ## 📸 Screenshots
 
-All screenshots are stored in the `/screenshots` directory.
 
-|  #  | Description                                                             | File                                |
-| :-: | :---------------------------------------------------------------------- | :---------------------------------- |
-|  1  | EC2 **System Log** showing httpd successfully installed                 | `/screenshots/system-log.png`       |
-|  2  | **Web Page** displayed in browser                                       | `/screenshots/web-page.png`         |
-|  3  | **Instance Details** in EC2 CLI after connecting  | `/screenshots/cli.png` |
+![EC2 CLI after connecting](./screenshots/cli.png)
+![EC2 **System Log** showing httpd successfully installed](./screenshots/system-log.png)
+![**Web Page** displayed in browser](./screenshots/web-page.png)
+
 
 **Folder structure:**
 

@@ -52,7 +52,7 @@ Value: True
 Result: Beta charts dynamically displayed in dashboard
 ```
 
-![Lab Dashboard Screenshot](./dashboard.png)
+![Lab Dashboard Screenshot](./screenshots/dashboard.png)
 
 ### Task 4: Session Manager
 Accessed EC2 instance command line through browser-based session without opening SSH ports or managing key pairs.

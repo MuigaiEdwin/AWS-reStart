@@ -4,6 +4,8 @@
 
 This lab demonstrates how to launch and troubleshoot an Amazon EC2 instance using the AWS CLI. The instance is configured as a LAMP stack (Linux, Apache, MySQL/MariaDB, PHP) hosting the Café Web Application with a database backend.
 
+![Successfully deployed the LAMP stack with the Café Web Application!](./screenshots/cafe.png)
+
 ## Architecture
 
 The lab creates a complete web application infrastructure including:
@@ -289,7 +291,6 @@ http://<new-public-ip>/cafe
 
 ---
 
-![Successfully deployed the LAMP stack with the Café Web Application!](./screenshots/cafe.png)
 
 ## Additional Troubleshooting Tips
 

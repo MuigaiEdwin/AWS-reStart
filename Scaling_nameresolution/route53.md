@@ -13,6 +13,8 @@ This lab configures DNS-based failover routing for a café web application deplo
 - **Route 53**: Health checks and failover DNS records
 - **Monitoring**: SNS email notifications for health check failures
 
+![Lab Dashboard Screenshot](/screenshots/failover-arch.png)
+
 ## Learning Objectives
 
 - Configure Route 53 health checks with email notifications

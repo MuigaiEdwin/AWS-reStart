@@ -24,3 +24,7 @@ aws sns publish \
   --topic-arn YOUR_TOPIC_ARN \
   --message file://order.json
 
+#security group
+aws ec2 create-security-group \
+  --cli-input-json file://security-group.json
+

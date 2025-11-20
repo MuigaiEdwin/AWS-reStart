@@ -1,0 +1,16 @@
+{
+  "Description": "Allow SSH and HTTP",
+  "GroupName": "WebAccessSG",
+  "VpcId": "YOUR_VPC_ID",
+  "TagSpecifications": [
+    {
+      "ResourceType": "security-group",
+      "Tags": [
+        { "Key": "Name", "Value": "WebSG" }
+      ]
+    }
+  ]
+}
+
+
+

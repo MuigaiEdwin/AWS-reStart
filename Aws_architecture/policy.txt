@@ -1,0 +1,26 @@
+aws iam create-policy \
+  --policy-name EC2ReadOnlyPolicy \
+  --policy-document file://read-only-ec2.json
+
+#s3bucket policy
+aws s3api put-bucket-policy \
+  --bucket YOURBUCKETNAME \
+  --policy file://public-read-s3.json
+
+
+#Ec2stack policy
+aws cloudformation create-stack \
+  --stack-name MyEC2Stack \
+  --template-body file://ec2-template.json
+
+#Lambda role
+aws iam put-role-policy \
+  --role-name MyLambdaRole \
+  --policy-name LambdaLogs \
+  --policy-document file://lambda-logs-policy.json
+
+#Sns publish policy
+aws sns publish \
+  --topic-arn YOUR_TOPIC_ARN \
+  --message file://order.json
+

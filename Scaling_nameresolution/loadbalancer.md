@@ -92,7 +92,7 @@ Auto Scaling Groups → Create:
    ```
    http://<load-balancer-dns-name>
    ```
-![Lab Dashboard Screenshot](./screenshots/Load%20Test.png)
+![Lab Dashboard Screenshot](/screenshots/Load%20Test.png)
 
 2. **Generate load:**
    - Click "Load Test" in the application

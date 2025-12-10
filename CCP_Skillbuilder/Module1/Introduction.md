@@ -10,6 +10,7 @@ This module introduces fundamental concepts of cloud computing and the AWS Cloud
 ### ✅ Welcome to AWS Cloud Practitioner Essentials
 - Introduction to the course structure and objectives
 - Overview of what you'll learn throughout the certification path
+![Module1:Cloud](/screenshots/Module1.png)
 
 ### ✅ What is Cloud Computing?
 **Cloud Computing** is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing.

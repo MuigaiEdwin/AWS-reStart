@@ -98,7 +98,7 @@ Auto Scaling Groups → Create:
    - Click "Load Test" in the application
    - Watch CPU utilization increase in CloudWatch
 
-   ![Lab Dashboard Screenshot](/screenshots/)
+   ![Lab Dashboard Screenshot](/screenshots/CPU.png)
 
 3. **Monitor scaling:**
    - AlarmHigh triggers when CPU > 50% for 3 minutes

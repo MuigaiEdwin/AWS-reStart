@@ -28,6 +28,7 @@ By the end of this lab, I can now:
 
 ---
 
+![Lab Dashboard Screenshot](/screenshots/CustomerD.png)
 ## My Troubleshooting Journey
 
 ### Step 1: Getting Connected
@@ -186,6 +187,7 @@ http://<PUBLIC-IP-ADDRESS>
 **And there it was!** 🎉
 
 The Apache test page loaded perfectly:
+![Lab Dashboard Screenshot](/screenshots/apache.png)
 
 > **"It works! This is the default web page for this server..."**
 

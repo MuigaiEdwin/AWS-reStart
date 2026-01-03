@@ -400,4 +400,4 @@ Try these to build your troubleshooting skills:
 
 **You're now ready to troubleshoot network issues like a pro!** 🎯
 
-**Last Updated**: November 2025
+**Last Updated**: January 2026

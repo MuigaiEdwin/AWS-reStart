@@ -362,11 +362,7 @@ Building on this experience, I want to:
 
 ---
 
-## Final Thoughts
 
-This lab was incredibly valuable because it simulated a real support ticket. I wasn't just configuring things—I was *fixing* things. That's where the real learning happens.
-
-The satisfaction of seeing that Apache test page load after figuring out the problem? That's what makes this field exciting.
 
 **Key Takeaway:** Troubleshooting is a skill you build through practice. Each problem you solve makes you better at solving the next one.
 

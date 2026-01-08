@@ -19,7 +19,7 @@ I just built a complete, production-ready VPC from scratch and launched a workin
 - Make everything highly available
 
 Looking at their architecture diagram, I thought "This looks complex, but let's break it down step by step."
-
+![Lab Dashboard Screenshot](/screenshots/VPC2architecture.png)
 ---
 
 ## What I Built
@@ -122,6 +122,7 @@ Private subnets route internet traffic through the NAT Gateway (for security).
 
 **The "aha" moment:** Route tables are like road signs—they tell your traffic which way to go!
 
+![Lab Dashboard Screenshot](/screenshots/VPC1.png)
 ---
 
 ### Task 4: Setting Up Security (The Firewall)
@@ -222,6 +223,8 @@ http://ec2-xx-xxx-xx-xx.us-west-2.compute.amazonaws.com
 ```
 
 **AND IT WORKED!** 🎉
+
+![Lab Dashboard Screenshot](/screenshots/VPCservergood.png)
 
 The page loaded with:
 - AWS logo
@@ -388,6 +391,7 @@ Lab VPC (10.0.0.0/16)
 
 **From diagram to reality:** The customer's architecture diagram became my running infrastructure!
 
+![Lab Dashboard Screenshot](/screenshots/
 ---
 
 ## Key Takeaways

@@ -1,5 +1,7 @@
 # My Journey: Using Amazon Inspector for Security Vulnerability Assessment
 
+![Lab Dashboard Screenshot](/screenshots/Nethardening.png)
+
 ## What I Just Did
 
 I just became a security engineer! I activated Amazon Inspector, discovered vulnerabilities in Lambda functions, researched CVEs, and fixed security issues. This wasn't theoretical—I found real vulnerabilities and patched them. This is exactly what security teams do in production.
